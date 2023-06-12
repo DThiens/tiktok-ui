@@ -4,7 +4,7 @@ import styles from './Header.module.scss';
 const cx = classNames.bind(styles);
 
 function Header() {
-    return <Header classNames={cx('wrapper')}>Header</Header>;
+    return <Header className={cx('wrapper')}>Header</Header>;
 }
 
 export default Header;
