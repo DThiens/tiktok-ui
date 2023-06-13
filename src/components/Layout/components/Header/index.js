@@ -4,7 +4,14 @@ import styles from './Header.module.scss';
 const cx = classNames.bind(styles);
 
 function Header() {
-    return <Header className={cx('wrapper')}>Header</Header>;
+    return (
+        <header className={cx('wrapper')}>
+            <div className={cx('inner')}>
+                {/* {logo} */}
+                {/* {search} */}
+            </div>
+        </header>
+    );
 }
 
 export default Header;
