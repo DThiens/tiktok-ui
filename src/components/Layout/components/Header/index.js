@@ -11,9 +11,11 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 import Tippy from '@tippyjs/react/';
+import routesConfig from '~/config/routes';
 
 import 'tippy.js/dist/tippy.css';
 import Button from '~/components/Button';
+import { Link } from 'react-router-dom';
 
 import styles from './Header.module.scss';
 import images from '~/assets/images';
@@ -95,9 +97,9 @@ function Header() {
     return (
         <header className={cx('wrapper')}>
             <div className={cx('inner')}>
-                <div className={cx('logo')}>
+                <Link to={routesConfig.home} className={cx('logo-link')}>
                     <img src={images.logo} alt="Tiktok" />
-                </div>
+                </Link>
 
                 <Search />
 
@@ -133,7 +135,6 @@ function Header() {
                                 className={cx('user-avatar')}
                                 src="https://p16-sign-useast2a.tiktokcdn.com/tos-useast2a-avt-0068-giso/3a7b263d454d2ab77bb45c7ae5920f30~c5_100x100.jpeg?x-expires=1687255200&x-signature=ZntzmQXrSBqTDEX%2BrKe9RnDDRMc%3D"
                                 alt="Nguyen Van A"
-                                fallback="https://p16-sign-useast2a.tiktokcdn.com/tos-useast2a-avt-0068-giso/42de014f78db129531f5587beecfb28d~c5_720x720.jpeg?x-expires=1687392000&x-signature=XqtpKS2hjJgdYJJzMVNTD3bN2kI%3D"
                             />
                         ) : (
                             <button className={cx('more-btn')}>
