@@ -47,6 +47,7 @@
     padding: 4px 12px;
     cursor: pointer;
     background-color: transparent;
+    position: relative;
 }
 
 .user-avatar {
@@ -64,12 +65,12 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
-    right: 285px;
+    right: 0px;
     padding: 0px 6px;
     background: rgb(254, 44, 85);
     min-width: 20px;
     height: 20px;
     border-radius: 10px;
     position: absolute;
-    top: 2px;
+    top: -4px;
 }

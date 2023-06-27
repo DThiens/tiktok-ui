@@ -11,7 +11,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 import Tippy from '@tippyjs/react/';
-import routesConfig from '~/config/routes';
+import config from '~/config';
 
 import 'tippy.js/dist/tippy.css';
 import Button from '~/components/Button';
@@ -33,7 +33,7 @@ const MENU_ITEMS = [
         icon: <FontAwesomeIcon icon={faLanguage} />,
         title: 'English',
         children: {
-            title: 'English',
+            title: 'Language',
             data: [
                 {
                     type: 'language',
@@ -97,7 +97,7 @@ function Header() {
     return (
         <header className={cx('wrapper')}>
             <div className={cx('inner')}>
-                <Link to={routesConfig.home} className={cx('logo-link')}>
+                <Link to={config.routes.home} className={cx('logo-link')}>
                     <img src={images.logo} alt="Tiktok" />
                 </Link>
 
